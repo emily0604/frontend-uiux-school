@@ -1,0 +1,20 @@
+include modules/_page-list/_page-list
+include modules/head/head
+include modules/header/header
+include modules/breadcrumb/breadcrumb
+include modules/signup/signup
+include modules/button/button
+include modules/footer/footer
+
+doctype html
+html
+  +head(head.home)
+  body
+    //- [Sign Up Page]
+    +header
+    .container
+      .contact__breadcrumb
+        +breadcrumb('Home', 'Đăng ký')
+    +signup
+    +footer
+    script(src="js/main.js")
