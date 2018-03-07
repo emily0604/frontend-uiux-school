@@ -6,16 +6,6 @@
 .aside-list {
   margin-bottom: 30px;
 }
-.aside-list {
-  &__item {
-    padding: 22px 21px 21px;
-    border: 1px solid $gray-90;
-    border-top: 0;
-    &:first-child {
-      border-top: 1px solid $gray-90;
-    }
-  }
-}
 .home-slider-wrap {
   margin: 0 -15px;
 }
@@ -65,4 +55,9 @@
     width: 100%;
   }
 }
-
+.home-news {
+  margin-bottom: 74px;
+  &__heading::after {
+    width: 108px;
+  }
+}
