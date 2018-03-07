@@ -1,0 +1,69 @@
+{
+  "pageList": {
+    "data": [{
+        "title": "Footer",
+        "url": "footer"
+      },{
+        "title": "header",
+        "url": "header"
+      },{
+        "title": "Button",
+        "url": "button"
+      },{
+        "title": "Sidebar general",
+        "url": "sidebar-general"
+      },{
+        "title": "Sidebar news",
+        "url": "sidebar-news"
+      },{
+        "title": "Product",
+        "url": "product"
+      },{
+        "title": "Header of product page",
+        "url": "product-header"
+      },{
+        "title": "product grid style",
+        "url": "product-grid"
+      },{
+        "title": "News page",
+        "url": "news"
+      },{
+        "title": "Popup",
+        "url": "popup"
+      },{
+        "title": "product grid style",
+        "url": "product-grid"
+      },{
+        "title": "Sign Up page",
+        "url": "signup"
+      },{
+        "title": "Sign In page",
+        "url": "signin"
+      },{
+        "title": "Contact page",
+        "url": "contact"
+      },{
+        "title": "New Detail page",
+        "url": "new-detail"
+      },{
+        "title": "Comment block",
+        "url": "comment"
+      },{
+        "title": "Home page",
+        "url": "index"
+      },{
+        "title": "Cart page",
+        "url": "cart"
+      },{
+        "title": "Grid page",
+        "url": "grid"
+      },{
+        "title": "List page",
+        "url": "list"
+      },{
+        "title": "Detail page",
+        "url": "detail"
+      }
+    ]
+  }
+}

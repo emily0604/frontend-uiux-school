@@ -1,0 +1,20 @@
+include modules/_page-list/_page-list
+include modules/head/head
+include modules/header/header
+include modules/breadcrumb/breadcrumb
+include modules/signin/signin
+include modules/button/button
+include modules/footer/footer
+
+doctype html
+html
+  +head(head.home)
+  body
+    //- [Sign In Page]
+    +header
+    .container
+      .signin__breadcrumb
+        +breadcrumb('Home', 'Đăng nhập')
+    +signin
+    +footer
+    script(src="js/main.js")

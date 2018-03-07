@@ -1,0 +1,64 @@
+include ../button/button
+
+mixin product-mini(img, name, price)
+  .product-mini
+    a.product-mini__imgwrap(href="#!")
+      img.product-mini__img(src=img , alt="")
+    .product-mini__info
+      h6.product-mini__name
+        a(href="#!")= name
+      .product-mini__rate
+        i.fa.fa-star
+        i.fa.fa-star
+        i.fa.fa-star
+        i.fa.fa-star
+        i.fa.fa-star-half-o
+      p.product-mini__price= price
+mixin product-list(src, name, intro, rate)
+  .product-list
+    .product-list__element.product-list__element--left
+      img.product-list__images(src=src, alt="")
+    .product-list__element
+      .product-list__main
+        h6.product-list__heading
+          a(href="") #{name}
+        ul.product-list__vote
+          each item in [1, 2, 3, 4, 5]
+            li.product-list__stars
+              a.product-list__link(href="")
+                i.product-list__icon.fa.fa-star
+        p.product-list__text #{intro}
+        h6.product-list__rate
+          | #{rate}
+          span.product-list__unit đ
+        .product-list__buttons
+          +button-green("MUA NGAY")
+          - var list = ["search", "heart"]
+          each item in list
+            span.product-list__btn
+              a.product-list__link.product-list__link--btn(href="")
+                i.product-list__icon--btn.fa(class="fa-"+item)
+mixin product-grid(state, text)
+  .product-grid
+    .product-grid__imgwrap
+      img.product-grid__img(src="images/1.png", alt="product img")
+      if (state)
+        .state(class="state--"+state)= text
+      .product-grid__btnwrap
+        a.button.button--green.product-grid__btn(href="#!") MUA NGAY
+        a.btn-icon(href="#!")
+          i.fa.fa-search
+    .product-grid__info
+      h6.product-grid__name
+        a(href="#!") Cây chân chim
+      .product-grid__rate
+        i.fa.fa-star
+        i.fa.fa-star
+        i.fa.fa-star
+        i.fa.fa-star
+        i.fa.fa-star-half-o
+      .product-grid__price
+        span.product-grid__newprice
+          | 250.000 đ
+        span.product-grid__oldprice
+          del 250.000 đ
